@@ -1,0 +1,97 @@
+[package]
+name = "tokio-cookbook"
+version = "0.1.0"
+authors = ["Rick Richardson <rick@agilestacks.com>"]
+edition = "2018"
+
+[[bin]]
+name = "background-task"
+path = "background-task/main.rs"
+
+[[bin]]
+name = "either-for-multiple-returns"
+path = "either-for-multiple-returns/main.rs"
+
+[[bin]]
+name = "limit-stream-by-msg-count"
+path = "limit-stream-by-msg-count/main.rs"
+
+[[bin]]
+name = "select-for-multiple-stream-types"
+path = "select-for-multiple-stream-types/main.rs"
+
+[[bin]]
+name = "stream-error-handling"
+path = "stream-error-handling/main.rs"
+
+[[bin]]
+name = "backpressure-rate-limiting"
+path = "backpressure-rate-limiting/main.rs"
+
+[[bin]]
+name = "file-over-stream"
+path = "file-over-stream/main.rs"
+
+[[bin]]
+name = "listen-for-heartbeat"
+path = "listen-for-heartbeat/main.rs"
+
+[[bin]]
+name = "send-at-regular-intervals-delayqueue"
+path = "send-at-regular-intervals-delayqueue/main.rs"
+
+[[bin]]
+name = "thread-pool-with-results"
+path = "thread-pool-with-results/main.rs"
+
+[[bin]]
+name = "box-for-multiple-returns"
+path = "box-for-multiple-returns/main.rs"
+
+[[bin]]
+name = "futures-for-child-processes"
+path = "futures-for-child-processes/main.rs"
+
+[[bin]]
+name = "message-queue-between-tasks"
+path = "message-queue-between-tasks/main.rs"
+
+[[bin]]
+name = "shared-mutable-access"
+path = "shared-mutable-access/main.rs"
+
+[[bin]]
+name = "futures-for-stdin-stdout"
+path = "futures-for-stdin-stdout/main.rs"
+
+[[bin]]
+name = "monitor-signals"
+path = "monitor-signals/main.rs"
+
+[[bin]]
+name = "spawn-tasks-in-current-thread"
+path = "spawn-tasks-in-current-thread/main.rs"
+
+[[bin]]
+name = "connect-using-dns-resolution"
+path = "connect-using-dns-resolution/main.rs"
+
+[[bin]]
+name = "limit-stream-by-duration"
+path = "limit-stream-by-duration/main.rs"
+
+[[bin]]
+name = "parallel-stream-to-file"
+path = "parallel-stream-to-file/main.rs"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures-preview = { version="=0.3.0-alpha.18", features = ["async-await", "nightly"] }
+futures-core-preview = "=0.3.0-alpha.18"
+futures-sink-preview = "=0.3.0-alpha.18"
+futures-util-preview = "=0.3.0-alpha.18"
+tokio = "=0.2.0-alpha.4"
+tokio-io = { version = "=0.2.0-alpha.4", features = ["util"] }
+tokio-sync = "=0.2.0-alpha.4"
